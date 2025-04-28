@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --font-rancho: "Rancho", "cursive";
+}
+
+#header-bg {
+    background: #382801;
+    background-image: url("/src/assets/headerBg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner {
+    background: #1f1e1e;
+    background-image: url("/src/assets/bannerbg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner-actions .active {
+    background: #000;
+}
