@@ -26,7 +26,7 @@ const AddCoffee = () => {
       photo,
     };
 
-    fetch("http://localhost:5000/coffees", {
+    fetch("https://coffee-store-server-coral-sigma.vercel.app/coffees", {
       method: "POST",
       headers: {
         "content-type": "application/json",

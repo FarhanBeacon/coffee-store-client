@@ -27,7 +27,7 @@ function App() {
         swal("Your coffee has been deleted!", {
           icon: "success",
         });
-        fetch(`http://localhost:5000/coffees/${id}`, {
+        fetch(`https://coffee-store-server-coral-sigma.vercel.app/coffees/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

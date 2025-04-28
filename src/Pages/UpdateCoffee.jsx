@@ -27,7 +27,7 @@ const UpdateCoffee = () => {
       details,
       photo,
     };
-    fetch(`http://localhost:5000/coffees/${coffee._id}`, {
+    fetch(`https://coffee-store-server-coral-sigma.vercel.app/coffees/${coffee._id}`, {
         method: "PUT",
         headers: {
             "content-type": "application/json"

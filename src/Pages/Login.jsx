@@ -22,7 +22,7 @@ const Login = () => {
       const loginInfo = { email, lastSignInTime };
 
       setUser(userData);
-      fetch("http://localhost:5000/users", {
+      fetch("https://coffee-store-server-coral-sigma.vercel.app/users", {
         method: "PATCH",
         headers: {
           
