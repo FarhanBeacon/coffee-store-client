@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../providers/AuthProvider";
 import swal from "sweetalert";
+import logo1 from "../assets/logo1.png";
 
 const Header = () => {
   const { signOutUser, user } = useContext(AuthContext);
@@ -16,7 +17,7 @@ const Header = () => {
         <div className="flex justify-between items-center px-6">
           <div className="flex justify-center items-center gap-2 p-2">
             <img
-              src="/src/assets/logo1.png"
+              src={logo1}
               alt="logo"
               width="65px"
               height="80px"

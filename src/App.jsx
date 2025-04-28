@@ -5,6 +5,12 @@ import { FaPen, FaEye } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import theme1 from "./assets/theme1.png"
+import theme2 from "./assets/theme2.png"
+import item1 from "./assets/icons/1.png"
+import item2 from "./assets/icons/2.png"
+import item3 from "./assets/icons/3.png"
+import item4 from "./assets/icons/4.png"
 
 function App() {
   const loadedCoffees = useLoaderData();
@@ -60,7 +66,7 @@ function App() {
             {/* Item-01 */}
             <div className="flex flex-col items-center">
               <img
-                src="/src/assets/icons/1.png"
+                src={item1}
                 alt="icon"
                 width="50px"
                 height="50px"
@@ -76,7 +82,7 @@ function App() {
             {/* Item-02 */}
             <div className="flex flex-col items-center">
               <img
-                src="/src/assets/icons/2.png"
+                src={item2}
                 alt="icon"
                 width="50px"
                 height="50px"
@@ -91,7 +97,7 @@ function App() {
             {/* Item-03 */}
             <div className="flex flex-col items-center">
               <img
-                src="/src/assets/icons/3.png"
+                src={item3}
                 alt="icon"
                 width="50px"
                 height="50px"
@@ -106,7 +112,7 @@ function App() {
             {/* Item-04 */}
             <div className="flex flex-col items-center">
               <img
-                src="/src/assets/icons/4.png"
+                src={item4}
                 alt="icon"
                 width="50px"
                 height="50px"
@@ -122,8 +128,8 @@ function App() {
         </div>
       </header>
       <main className="relative">
-        <img className="absolute -left-[8%] top-[2%] md:top-[0%] w-[140px] md:w-[300px] h-auto" src="/src/assets/theme1.png" alt="theme" />
-        <img className="absolute -right-[9%]  top-[30%] md:top-[10%] w-[140px] md:w-[300px] h-auto" src="/src/assets/theme2.png" alt="theme" />
+        <img className="absolute -left-[8%] top-[2%] md:top-[0%] w-[140px] md:w-[300px] h-auto" src={theme1} alt="theme" />
+        <img className="absolute -right-[9%]  top-[30%] md:top-[10%] w-[140px] md:w-[300px] h-auto" src={theme2} alt="theme" />
         <h4 className="text-lg text-center mt-[5%]">--- Sip & Savor ---</h4>
         <h1 className="text-3xl text-center font-bold font-rancho">
           Our Popular Products

@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import BackToHomeBtn from "../components/BackToHomeBtn";
 import { useLoaderData } from "react-router";
 import swal from "sweetalert";
+import userProfile from "../assets/userProfile.jpg";
 
 const Users = () => {
   const loadedUsers = useLoaderData();
@@ -64,11 +65,7 @@ const Users = () => {
                       <div className="avatar">
                         <div className="mask mask-squircle h-12 w-12">
                           <img
-                            src={
-                              user.image
-                                ? user.image
-                                : "/src/assets/userProfile.jpg"
-                            }
+                            src={user.image ? user.image : userProfile}
                             alt="Avatar"
                           />
                         </div>
